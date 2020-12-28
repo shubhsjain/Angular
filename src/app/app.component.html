@@ -1,0 +1,71 @@
+<!-- <input type="text" #box /> -->
+
+                   <!-- interpoletion -->
+
+<h1>{{title}}</h1>
+
+<!-- <button (click)="getval(box.value)" >save</button> -->
+<!-- (keyup) = "getval($event.target.value)  " -->
+
+                    <!-- interpoletion -->
+
+<!-- <h2>
+  {{currentval}}
+</h2> -->
+
+
+                  <!-- property binding -->
+
+<!-- <h1>property binding</h1> -->
+
+                    <!-- interpoletion -->
+
+<!-- <input type="text" [disabled]="disabledBox" [value]="name" /> -->
+<!-- <br><br> -->
+
+                    <!-- property binding -->
+
+<!-- <input type="text" disabled={{disabledBox}} value={{name}} /> -->
+
+<!-- <br><br> -->
+<!-- <button (click)="enableBox()" > Enable text box</button> -->
+
+
+                      <!-- if else statement / condition statement -->
+
+<!-- <h1>conditions in angular</h1> -->
+
+<!-- <h1 *ngIf="show true else elseBlock "> -->
+<!-- <h1 *ngIf="show=='yes' else elseBlock "> -->
+<!-- 
+  <h1 *ngIf="show=='yes'; then ifBlock else : elseBlock ">
+
+  </h1>
+<ng-template #ifBlock>
+  <h1>if block</h1>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h1>else block</h1>
+</ng-template> -->
+
+<!-- <ng-template [ngIf] = "show== 'red' ">
+  <h1 style="color: red;">red block</h1>
+
+</ng-template>
+
+<ng-template [ngIf] = "show== 'green' ">
+  <h1 style="color: green;">green block</h1>
+</ng-template>
+
+<ng-template [ngIf] = "show== 'yellow' ">
+  <h1 style="color: yellow;"> yellow block</h1>
+</ng-template> -->
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
