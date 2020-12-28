@@ -34,5 +34,10 @@ export class AppComponent {
 
   // show = "yellow"
 
+  //  switch case
+
+  // color= "blue"
+
+  
 
 }
