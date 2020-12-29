@@ -57,5 +57,9 @@ export class AppComponent {
   //     email:"shubh@gmail.com"
   //   }
   // ]
+        // NG FORM
+  // getUserValue(value: any) {
+  //   console.log(value)
+  // }
 
 }
