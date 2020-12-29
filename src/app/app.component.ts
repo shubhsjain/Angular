@@ -38,6 +38,24 @@ export class AppComponent {
 
   // color= "blue"
 
-  
+     // for loop in angular
+
+  // data = [
+  //   {
+  //     name: 'shubh',
+  //     age: 23,
+  //     email:"shubh@gmail.com"
+  //   },
+  //   {
+  //     name: 'bruce',
+  //     age : 24,
+  //     email:"shubh@gmail.com"
+  //   },
+  //   {
+  //     name: ' peter',
+  //     age :  26,
+  //     email:"shubh@gmail.com"
+  //   }
+  // ]
 
 }
