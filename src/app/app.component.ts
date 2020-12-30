@@ -62,4 +62,16 @@ export class AppComponent {
   //   console.log(value)
   // }
 
+      // style binding
+  
+  // color = "blue"
+
+  // err = true
+  
+  // updateColor() {
+  //   this.color = "orange"
+  // }
+  
+
+
 }
