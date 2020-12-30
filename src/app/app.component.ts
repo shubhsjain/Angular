@@ -72,6 +72,12 @@ export class AppComponent {
   //   this.color = "orange"
   // }
   
+  // child to parent component
+
+  // data = {
+  //   name: 'bruce',
+  //   age: 25
+  // }
 
 
 }
