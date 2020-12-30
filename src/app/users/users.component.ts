@@ -7,6 +7,13 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class UsersComponent implements OnInit {
 
+  // parent to child
+
+ // @Input() hero:any
+  
+  
+  // resuable component
+
   // @Input() hero:any
 
   constructor() { }

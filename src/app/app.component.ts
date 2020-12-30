@@ -72,12 +72,32 @@ export class AppComponent {
   //   this.color = "orange"
   // }
   
-  // child to parent component
+  // cparent to child component
 
   // data = {
   //   name: 'bruce',
   //   age: 25
   // }
+
+  // resuable component
+
+  // users = [
+  //   {
+  //     name: 'bruce',
+  //     age: 25,
+  //     addr: 'akola'
+  //   },
+  //   {
+  //     name: 'peter',
+  //     age: 23,
+  //     addr: 'nashik'
+  //   },
+  //   {
+  //     name: 'clark',
+  //     age: 30,
+  //     addr: 'delhi'
+  //   },
+  // ]
 
 
 }
