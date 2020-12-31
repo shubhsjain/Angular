@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+// import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-users',
@@ -6,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
+
 
   // parent to child
 
@@ -16,11 +18,32 @@ export class UsersComponent implements OnInit {
 
   // @Input() hero:any
 
+    // child to parent component
+  
+  // @Output() parentComponent = new EventEmitter<any>()
+  
+  // sendData() {
+  //   let data = { name: 'shubham', age : 26}
+  // this.parentComponent.emit(data)
+  // console.log(data)
+
+  //   }
+
+  
+
   constructor() { }
 
   ngOnInit(): void {
 
     // console.log(this.hero)
-  }
 
+    // child to parent component
+
+    // this.parentComponent.emit(item)
+
+  
+ 
+
+  
+  }
 }

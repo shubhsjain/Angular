@@ -99,5 +99,15 @@ export class AppComponent {
   //   },
   // ]
 
+    // child to parent component
+
+  //     data: any
+  // parentComponent(data:any) {
+    
+  //   this.data=data
+  //   }
+
+  
+
 
 }
