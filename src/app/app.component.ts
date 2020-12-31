@@ -107,7 +107,11 @@ export class AppComponent {
   //   this.data=data
   //   }
 
+// pipes
+  // name = "shUbhAm jaIN"
+  // today = Date.now()
+  // str = "Hello Angular"
+  // val=10
+
   
-
-
 }

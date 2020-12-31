@@ -42,8 +42,5 @@ export class UsersComponent implements OnInit {
     // this.parentComponent.emit(item)
 
   
- 
-
-  
   }
 }
