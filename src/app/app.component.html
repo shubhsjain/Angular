@@ -169,4 +169,19 @@
 
    <!-- <h1> {{name}}  </h1> -->
 
+   <!-- call an api  -->
+
+   <table style="width: 100%; border: 1px solid; text-align: center;" border="9" >
+    <tr>
+      <td>Id</td>
+      <td>Title</td>
+      <td>User Id</td>
+    </tr>
+    <tr *ngFor="let item of data">
+      <td> {{item.id}} </td>
+      <td style="text-align: justify; padding-left: 9px !important; padding: 3px;"> {{item.title}} </td>
+      <td> {{item.userId}} </td>
+    </tr>
+   </table>
+
 <router-outlet></router-outlet>

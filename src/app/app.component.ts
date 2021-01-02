@@ -12,10 +12,11 @@ export class AppComponent {
   title = '';
 
 // call simple api
-  
+   data:any =[]
   constructor(private user: UsersDataService) {
     this.user.getData().subscribe(data => {
       console.log(data)
+      this.data = data
     })
   }
 
