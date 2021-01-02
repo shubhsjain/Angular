@@ -5,8 +5,8 @@ import { Directive, ElementRef } from '@angular/core';
 })
 export class NewDDirective {
 
-  constructor(private AR:ElementRef) { 
-    AR.nativeElement.style.color="red"
-  }
+  // constructor(private AR:ElementRef) { 
+    // AR.nativeElement.style.color="red"
+  // }
 
 }
