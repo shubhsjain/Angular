@@ -1,3 +1,4 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component } from '@angular/core';
 import {UsersDataService} from './users-data.service'
 
@@ -10,7 +11,19 @@ export class AppComponent {
 
   title = '';
 
+// call simple api
+  
+  constructor(private user: UsersDataService) {
+    this.user.getData().subscribe(data => {
+      console.log(data)
+    })
+  }
+
+
+
+
   // services
+
   // name=""
   // constructor(private user:UsersDataService) {
     // console.log(this.user.getData())
