@@ -12,15 +12,16 @@ export class AppComponent {
 
   title = '';
 
-// call simple api
-  data: any = []
+// call simple api / pagination
+  // data: any = []
+  // p: number = 0
   
-  constructor(private user: UsersDataService) {
-    this.user.getData().subscribe(data => {
-      console.log(data)
-      this.data = data
-    })
-  }
+  // constructor(private user: UsersDataService) {
+  //   this.user.getData().subscribe(data => {
+  //     console.log(data)
+  //     this.data = data
+  //   })
+  // }
 
 
 
