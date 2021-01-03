@@ -1,6 +1,7 @@
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component } from '@angular/core';
-import {UsersDataService} from './users-data.service'
+import { UsersDataService } from './users-data.service'
+import {NgxPaginationModule} from 'ngx-pagination'
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ export class AppComponent {
   title = '';
 
 // call simple api
-   data:any =[]
+  data: any = []
+  
   constructor(private user: UsersDataService) {
     this.user.getData().subscribe(data => {
       console.log(data)

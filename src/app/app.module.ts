@@ -8,7 +8,8 @@ import { UsersComponent } from './users/users.component';
 import { AdminComponent } from './admin/admin.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NewDDirective } from './new-d.directive'
-import {HttpClient, HttpClientModule} from '@angular/common/http'
+import { HttpClient, HttpClientModule } from '@angular/common/http'
+import {NgxPaginationModule} from 'ngx-pagination'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {HttpClient, HttpClientModule} from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

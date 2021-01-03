@@ -169,7 +169,7 @@
 
    <!-- <h1> {{name}}  </h1> -->
 
-   <!-- call an api  -->
+   <!-- call an api /  data list in table/ pagination -->
 
    <table style="width: 100%; border: 1px solid; text-align: center;" border="9" >
     <tr>
@@ -177,11 +177,13 @@
       <td>Title</td>
       <td>User Id</td>
     </tr>
-    <tr *ngFor="let item of data">
+    <tr *ngFor="let item of data | paginate : {itemsPerPage: 10, currentPage:0} ">
+      
       <td> {{item.id}} </td>
       <td style="text-align: justify; padding-left: 9px !important; padding: 3px;"> {{item.title}} </td>
       <td> {{item.userId}} </td>
     </tr>
    </table>
+   <pagination-controls (pageChange)= "$event" style="text-align: center;"></pagination-controls>
 
 <router-outlet></router-outlet>
