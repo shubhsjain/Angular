@@ -3,19 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { UsersComponent } from './users/users.component';
-import { AdminComponent } from './admin/admin.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NewDDirective } from './new-d.directive'
 import { HttpClient, HttpClientModule } from '@angular/common/http'
-import {NgxPaginationModule} from 'ngx-pagination'
-
+import { NgxPaginationModule } from 'ngx-pagination';
+import { AdminModule } from './admin/admin.module';
+import { UserModule } from './user/user.module';
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    AdminComponent,
     PageNotFoundComponent,
     NewDDirective
   ],
@@ -24,7 +23,9 @@ import {NgxPaginationModule} from 'ngx-pagination'
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    AdminModule,
+    UserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
