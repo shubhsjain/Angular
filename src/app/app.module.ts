@@ -11,12 +11,16 @@ import { HttpClient, HttpClientModule } from '@angular/common/http'
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AdminModule } from './admin/admin.module';
 import { UserModule } from './user/user.module';
+import { UserlistComponent } from './userlist/userlist.component';
+import { AdminlistComponent } from './adminlist/adminlist.component';
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     PageNotFoundComponent,
-    NewDDirective
+    NewDDirective,
+    UserlistComponent,
+    AdminlistComponent
   ],
   imports: [
     BrowserModule,

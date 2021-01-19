@@ -1,5 +1,7 @@
+import { UserlistComponent } from './userlist/userlist.component';
+import { AdminlistComponent } from './adminlist/adminlist.component';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
-import { Component } from '@angular/core';
+import { Component, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
 import { UsersDataService } from './users-data.service'
 import {NgxPaginationModule} from 'ngx-pagination'
 
@@ -11,6 +13,26 @@ import {NgxPaginationModule} from 'ngx-pagination'
 export class AppComponent {
 
   title = '';
+
+  // lazy loading component
+
+  constructor(private viewContainer: ViewContainerRef, private cfr: ComponentFactoryResolver) { }
+  
+  async loadAdmin() {
+    this.viewContainer.clear();
+    const { AdminlistComponent } = await import('./adminlist/adminlist.component')
+    this.viewContainer.createComponent(
+      this.cfr.resolveComponentFactory(AdminlistComponent)
+    )
+  }
+
+  async loadUser() {
+    this.viewContainer.clear();
+    const { UserlistComponent } = await import('./userlist/userlist.component')
+    this.viewContainer.createComponent(
+      this.cfr.resolveComponentFactory(UserlistComponent)
+    )
+  }
 
 // call simple api / pagination
   // data: any = []
