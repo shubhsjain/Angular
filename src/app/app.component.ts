@@ -14,25 +14,32 @@ export class AppComponent {
 
   title = '';
 
+
+  // template driven form
+
+  onSubmit( data :any) {
+    console.log(data)
+  }
+
   // lazy loading component
 
-  constructor(private viewContainer: ViewContainerRef, private cfr: ComponentFactoryResolver) { }
+  // constructor(private viewContainer: ViewContainerRef, private cfr: ComponentFactoryResolver) { }
   
-  async loadAdmin() {
-    this.viewContainer.clear();
-    const { AdminlistComponent } = await import('./adminlist/adminlist.component')
-    this.viewContainer.createComponent(
-      this.cfr.resolveComponentFactory(AdminlistComponent)
-    )
-  }
+  // async loadAdmin() {
+  //   this.viewContainer.clear();
+  //   const { AdminlistComponent } = await import('./adminlist/adminlist.component')
+  //   this.viewContainer.createComponent(
+  //     this.cfr.resolveComponentFactory(AdminlistComponent)
+  //   )
+  // }
 
-  async loadUser() {
-    this.viewContainer.clear();
-    const { UserlistComponent } = await import('./userlist/userlist.component')
-    this.viewContainer.createComponent(
-      this.cfr.resolveComponentFactory(UserlistComponent)
-    )
-  }
+  // async loadUser() {
+  //   this.viewContainer.clear();
+  //   const { UserlistComponent } = await import('./userlist/userlist.component')
+  //   this.viewContainer.createComponent(
+  //     this.cfr.resolveComponentFactory(UserlistComponent)
+  //   )
+  // }
 
 // call simple api / pagination
   // data: any = []

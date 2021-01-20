@@ -239,10 +239,30 @@
 
    <!-- lazy loading component -->
 
-   <h1>lazy loading component</h1>
+   <!-- <h1>lazy loading component</h1>
 <br>
    <button  (click)="loadAdmin()">load admin list</button>
    <br><br><br>
-   <button (click)="loadUser()">load user list</button>
+   <button (click)="loadUser()">load user list</button> -->
 
+
+   <!-- template driven form -->
+
+   <h2>ng template driven form</h2>
+  
+   <div class="col-sm-6">
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value) ">
+      
+        <label >Email address</label>
+        <input type="email" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter email" ngModel>
+      
+      
+        <label >Password</label>
+        <input type="password" class="form-control" name="password" placeholder="Password"  ngModel>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+   </div>
+
+   
 <router-outlet></router-outlet>
