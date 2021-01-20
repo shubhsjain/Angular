@@ -251,15 +251,17 @@
    <h2>ng template driven form</h2>
   
    <div class="col-sm-6">
-    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value) ">
-      
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value) "  ngNativeValidate>
+      <div>
         <label >Email address</label>
-        <input type="email" class="form-control" name="username" aria-describedby="emailHelp" placeholder="Enter email" ngModel>
-      
-      
+        <input type="email" class="form-control" name="username" #email="ngModel" aria-describedby="emailHelp" placeholder="Enter email" ngModel required >
+        <span style="color: red;" *ngIf="email.invalid && email.touched " >email should not be empty</span>
+    </div>
+    <div>
         <label >Password</label>
-        <input type="password" class="form-control" name="password" placeholder="Password"  ngModel>
-      
+        <input type="password" class="form-control" name="password" placeholder="Password"  ngModel required>
+        <br>
+      </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
    </div>
