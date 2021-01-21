@@ -17,16 +17,16 @@ export class AppComponent {
 
       // reactive form
   
-  loginForm = new FormGroup({
-    email: new FormControl('', Validators.required),
-    password : new FormControl('')
-  })
+  // loginForm = new FormGroup({
+  //   email: new FormControl('', Validators.required),
+  //   password : new FormControl('')
+  // })
   
-  get email() {return this.loginForm.get('email')}
+  // get email() {return this.loginForm.get('email')}
 
-  collectData() {
-    console.log(this.loginForm.value)
-  }
+  // collectData() {
+  //   console.log(this.loginForm.value)
+  // }
 
   // template driven form
 
