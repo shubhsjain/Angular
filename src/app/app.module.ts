@@ -13,6 +13,7 @@ import { AdminModule } from './admin/admin.module';
 import { UserModule } from './user/user.module';
 import { UserlistComponent } from './userlist/userlist.component';
 import { AdminlistComponent } from './adminlist/adminlist.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { AdminlistComponent } from './adminlist/adminlist.component';
     HttpClientModule,
     NgxPaginationModule,
     AdminModule,
-    UserModule
+    UserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

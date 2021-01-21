@@ -248,7 +248,7 @@
 
    <!-- template driven form -->
 
-   <h2>ng template driven form</h2>
+   <!-- <h2>ng template driven form</h2>
   
    <div class="col-sm-6">
     <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value) "  ngNativeValidate>
@@ -264,7 +264,19 @@
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
-   </div>
+   </div> -->
 
-   
+    <!-- reactive form -->
+
+    <h2>Angular reactive form</h2>
+
+    <form [formGroup]="loginForm" (ngSubmit)="collectData()" ngNativeValidate>
+      <input type="email" class="form-control" formControlName="email" required><br>
+      
+      <br><br>
+      <input type="password" class="form-control" formControlName="password" >
+      <br><br>
+      <button type="submit">LOGIN</button>
+    </form>
+
 <router-outlet></router-outlet>

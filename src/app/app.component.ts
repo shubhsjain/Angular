@@ -2,8 +2,9 @@ import { UserlistComponent } from './userlist/userlist.component';
 import { AdminlistComponent } from './adminlist/adminlist.component';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
-import { UsersDataService } from './users-data.service'
-import {NgxPaginationModule} from 'ngx-pagination'
+import { UsersDataService } from './users-data.service';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -14,12 +15,24 @@ export class AppComponent {
 
   title = '';
 
+      // reactive form
+  
+  loginForm = new FormGroup({
+    email: new FormControl('', Validators.required),
+    password : new FormControl('')
+  })
+  
+  get email() {return this.loginForm.get('email')}
+
+  collectData() {
+    console.log(this.loginForm.value)
+  }
 
   // template driven form
 
-  onSubmit( data :any) {
-    console.log(data)
-  }
+  // onSubmit( data :any) {
+  //   console.log(data)
+  // }
 
   // lazy loading component
 
